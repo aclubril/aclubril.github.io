@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piedra papel y tijeras</title>
+    <link href="./diceño.css" rel="stylesheet">
+    <script src="./juego.js"></script>
+</head>
+<body>
+ 
+<div class="pantalla-1 active" id="pantalla-1">
+    
+<h2> jugemos piedra papel y tijera!</h2>
+<div class="filas">
+    <img class="imagrock" src="./piedra.jpeg">
+    <img class="imagpapel"   src="./papel.jpeg">
+    <img class="imagtig" src="./tijera.jpeg">
+</div>
+    
+    <div class="container">
+        <div class="grid-opciones">
+            <button class="btn-opcion" onclick="hacerJugada(0)">
+                <i class="fas fa-hand-rock"></i>
+                Piedra
+            </button>
+            <button class="btn-opcion" onclick="hacerJugada(1)">
+                <i class="fas fa-hand-paper"></i>
+                Papel
+            </button>
+            <button class="btn-opcion" onclick="hacerJugada(2)">
+                <i class="fas fa-hand-scissors"></i>
+                Tijeras
+            </button>
+        </div>
+    </div>
+
+<br>
+<button onclick="changenumber()">victorias</button>
+<br>
+
+<div class="box">
+    <h3 class="texto-victorias">0</h3>
+</div>
+<br>
+<h2> Como jugar</h2>
+<p> es facil jugar solo tienes que apretar 1 de las opciones y la pagina eligira su propia opcion y despues te dira el resultado</p>
+<img class="imgrolls" src="./reglas.jpg">
+
+<button onclick="cambiarpantalla()"> agaresimiento</button>
+</div>
+<div class="pantalla-2" id="pantalla-2">
+<h1> gracias por jugar</h1>
+<img class="gracias" src="./gracias.jpeg">
+<button onclick="cambiarpantalla()">volver a jugar </button>
+</div>
+
+</body>
+</html>
